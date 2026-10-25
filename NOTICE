@@ -1,0 +1,20 @@
+Magpie phase-one adapter
+
+This adapter is added to sdloghub/codex-session-patcher-magpie, based on
+upstream ryfineZ/codex-session-patcher at cf7deab2d5b28c1f70f5b5498461848b69024a15.
+The legacy refusal phrase lists are adapted from
+codex_session_patcher/core/detector.py. Upstream README identifies its license
+as MIT; the inspected snapshot contains no standalone LICENSE file. Original
+source and author attribution remain in this repository. No license text or
+copyright holder has been invented for the original project.
+
+Magpie API references:
+https://usemagpie.ai/docs/plugins#middleware
+https://github.com/magpie-community/plugins
+
+The standalone distribution is https://github.com/sdloghub/magpie-session-patcher.
+New adapter code is MIT licensed as set out in LICENSE; original author
+rights in the upstream material remain unchanged.
+
+This package does not include community plugin source code, AI prompt
+templates, credentials, or the original Python/web runtime in its npm payload.

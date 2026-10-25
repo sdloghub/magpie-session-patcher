@@ -1,0 +1,30 @@
+{
+  "name": "magpie-session-patcher",
+  "version": "0.1.1",
+  "description": "Opt-in Magpie outbound history processing; leaves session files and live replies unchanged",
+  "type": "module",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": { "type": "git", "url": "git+https://github.com/sdloghub/magpie-session-patcher.git" },
+  "homepage": "https://github.com/sdloghub/magpie-session-patcher#readme",
+  "bugs": { "url": "https://github.com/sdloghub/magpie-session-patcher/issues" },
+  "files": ["session-patcher.middleware.js", "MAGPIE.md", "NOTICE", "LICENSE"],
+  "scripts": {
+    "test": "node --test tests-magpie/*.test.mjs"
+  },
+  "keywords": ["magpie", "magpie-middleware", "history"],
+  "magpie": {
+    "middleware": "./session-patcher.middleware.js",
+    "options": {
+      "enabled": false,
+      "replaceRefusals": true,
+      "cleanReasoning": false,
+      "appendPrompt": "",
+      "replacement": "[History filter: the previous assistant text was replaced. This is not evidence of any action or result.]",
+      "detection": "conservative",
+      "customKeywords": [],
+      "agents": [],
+      "models": []
+    }
+  }
+}
